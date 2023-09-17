@@ -1,0 +1,119 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--bcg-color);
+    color: var(--white);
+}
+
+.navbar .navbar__content {
+    padding: 3rem 4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .navbar__content .logo {
+    margin-top: -1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.navbar .navbar__content .logo span {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.navbar .navbar__content .navbar__links li {
+    display: inline-block;
+}
+
+.navbar .navbar__content .navbar__links a {
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar .navbar__content .navbar__links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar__content .navbar__links a:hover::after {
+    width: 100%;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: var(--white);
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.active {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar__content .navbar__mobile,
+.navbar .navbar__content .navbar__mobile .mobile__links {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar__content .navbar__links {
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 20px 20px;
+        background-color: var(--light-tertiary-color);
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .navbar__content .navbar__links li {
+        margin: 16px 0;
+        font-size: 1.8rem;
+    }
+
+    .navbar__content .navbar__links.active {
+        left: 0;
+    }
+}

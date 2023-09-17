@@ -1,0 +1,38 @@
+footer {
+    background-color: var(--light-tertiary-color);
+    color: var(--white);
+}
+
+footer .footer__content {
+    text-align: center;
+    padding: 6rem 2rem 1rem;
+    max-width: 47rem;
+}
+
+footer .footer__content h2{
+    color: var(--tertiary-color);
+}
+
+footer .footer__content .footer__contact span {
+    display: block;
+    font-weight: 500;
+}
+
+footer .footer__content ul li {
+    display: inline-block;
+}
+
+footer .footer__content ul a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.9rem;
+}
+
+footer .footer__content ul a:hover {
+    color: var(--tertiary-color);
+    transform: scale(1.03);
+}
+
+footer .footer__content .footer__copyright {
+    font-size: 1.4rem;
+}
