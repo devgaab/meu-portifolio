@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### 💻 Projeto.
 
-- [Acesse o projeto finalizado, online](https://gabyzinha72.github.io/meu-portifolio/)
+- [Acesse o projeto finalizado, online](https://devgaab.github.io/meu-portifolio/)
 
 ### ⚙ Funcionalidades
 
