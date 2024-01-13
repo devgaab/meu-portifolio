@@ -1,4 +1,4 @@
-<h1 align="center"> Meu Portfólio </h1>
+<h1 align="center">Portfólio Pessoal</h1>
 
 
 <p align="center">
@@ -10,12 +10,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/preview-desktop.png" width="100%">
-</p>
-
-<p align="center">
-  <img alt="projeto DevLinks" src=".github/preview-mobile-1.png" width="35%">
-  <img alt="projeto DevLinks" src=".github/preview-mobile-3.png" width="35%">
+  <img alt="projeto Portfólio" src=".github/preview-cover.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
