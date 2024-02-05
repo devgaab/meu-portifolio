@@ -8,16 +8,16 @@
 .projects .projects__content {
     max-width: 56rem;
     text-align: center;
-    margin: 0 auto 6rem;
+    margin: 0 auto 9rem;
 }
 
-.projects .projects__content h2{
+.projects .projects__content h2 {
     color: var(--primary-color);
 }
 
 .projects ul li {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 4rem;
 }
@@ -57,8 +57,21 @@
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
+.projects-more {
+    margin-top: 12rem;
+}
 
+.hide {
+    display: none;
+}
+
+.projects .see-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+@media only screen and (max-width: 768px) {
     .projects ul li,
     .projects ul li.projects__reversed-list {
         flex-direction: column;
