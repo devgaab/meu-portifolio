@@ -74,6 +74,7 @@ p:not(:last-of-type),
 }
 
 .btn.btn-primary:hover {
+    background-color: var(--primary-color);
     transform: scale(1.03);
 }
 
